@@ -1,21 +1,27 @@
 :root {
-  --rosa: #ffd7f5;
-  --verde: #a5b66a;
-
-  
-  --verde-oscuro: #5c6b38;   /* para texto sobre fondo claro, o botones */
-  --rosa-oscuro: #b5508f;    /* para acentos de texto, precios, etc. */
+    --rosa: #ffd7f5;
+    --verde: #a5b66a;
 
 
-  --texto: #2b2420;          /* casi negro, para el texto principal */
-  --texto-suave: #6b6058;    /* para descripciones, texto secundario */
-  --fondo: #fffaf8;          /* blanco calido */
-  --borde: #e8d8e3;
+    --verde-oscuro: #5c6b38;
+    /* para texto sobre fondo claro, o botones */
+    --rosa-oscuro: #b5508f;
+    /* para acentos de texto, precios, etc. */
 
-  --radio: 8px;
+
+    --texto: #2b2420;
+    /* casi negro, para el texto principal */
+    --texto-suave: #6b6058;
+    /* para descripciones, texto secundario */
+    --fondo: #fffaf8;
+    /* blanco calido */
+    --borde: #e8d8e3;
+
+    --radio: 8px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -33,41 +39,71 @@ main {
     flex: 1;
 }
 
-h1{
+.texto-bienvenida h2 {
+    font-size: 3rem;
+}
+
+header h1 {
     color: var(--texto);
     background-color: var(--verde);
     text-align: center;
     margin: 0;
+    padding: 1.5rem 5px;
+    box-sizing: border-box;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--verde);
     padding: 5px;
     border-bottom: 4px solid #4b2e2b;
     box-sizing: border-box;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+
+header h1 {
+    color: var(--texto);
+    margin: 0;
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    background-color: var(--verde);
+    background-color: var(--rosa);
     padding: 12px 0;
     margin: 0;
     border-top: 2px solid #4b2e2b;
-    border-bottom: 8px solid #4b2e2b;
+    border-bottom: 6px solid #4b2e2b;
 }
 
-nav a {
-    color: #4b2e2b;                   /* color del texto */
+nav a,
+body section p a {
+    color: #4b2e2b;
     background-color: var(--rosa);
     padding: 8px 16px;
     border-radius: 20px;
     text-decoration: none;
 }
 
-nav a:hover {
-    background-color: #4b2e2b;        /* al pasar el mouse, invierte: fondo oscuro */
-    color: white;                     /* y texto blanco */
+nav a:hover,
+body section p a:hover {
+    background-color: #4b2e2b;
+    color: white;
+
 }
 
-main {
+
+
+.inicio-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,53 +111,103 @@ main {
 }
 
 .texto-bienvenida {
-    background-color: var(--verde);
+    position: relative;
+    overflow: visible;
     max-width: 50%;
-    border: 2px solid #4b2e2b;
     border-radius: 15px;
     padding: 20px;
 }
 
-.imagen-bienvenida {
-    width: 450px;
+.texto-bienvenida h2,
+.texto-bienvenida p {
+    position: relative;
+    z-index: 2;
+   
+}
+
+.rama-decorativa {
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+    transform: translateY(-50%);
+    width: 30rem;
     height: auto;
-    border: 2px solid #4b2e2b;
-    border-radius: 15px;
+    opacity: 0.70;
+    z-index: 1;
+    /* queda detrás del texto */
+    pointer-events: none;
+    /* para que no interfiera si alguien hace clic cerca */
 }
 
-footer address ul {
-    background-color: var(--verde);
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5px 5px;
-    border-top: 2px solid #4b2e2b;
-    border-bottom: 2px solid #4b2e2b;
-}
-
-.grilla-productos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.producto {
-    width: 250px;
-    border: 2px solid #4b2e2b;
-    border-radius: 15px;
-    padding: 15px;
-    text-align: center;
-    background-color: var(--fondo);
-}
-
-.producto img {
-    width: 100%;
-    height: 180px;
+.imagen-bienvenida {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
-.producto-vinculo {
-    text-decoration: none;
-    color: inherit;
+body section h2 {
+    text-align: center;
+}
+
+.scroll-productos {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0.5rem;
+    overflow-x: auto;
+    /* clave: habilita el scroll horizontal */
+    scroll-snap-type: x mandatory;
+    /* hace que al soltar, "encaje" en cada tarjeta */
+}
+
+.tarjeta-producto {
+    flex: 0 0 auto;
+    /* evita que las tarjetas se achiquen para entrar todas */
+    width: 15rem;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.tarjeta-producto img {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: var(--radio);
+}
+
+.tarjeta-producto .precio {
+    font-weight: 700;
+    color: var(--verde-oscuro);
+}
+
+footer {
+    border-top: 2px solid #4b2e2b;
+    background: var(--verde);
+    margin-top: 1.2rem;
+    padding: 2rem 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+footer p {
+    text-align: center;
+    font-size: x-large;
 }

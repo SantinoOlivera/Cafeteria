@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pistacho Coffee Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/reserva.css">
+</head>
+
+<body>
+    <header>
+        <div class="marca">
+            <img src="images/pistacho.png" alt="Logo Pistacho Coffee Store" class="logo">
+            <h1>Pistacho Coffee Store</h1>
+        </div>
+
+
+        <nav>
+            <ul>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="index.html">Menu principal</a></li>
+                <li><a href="menu.html">Menu</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="contenido">
+        <div class="titulo-reserva">
+            <img src="images/rama.png" alt="" class="rama-titulo">
+            <h1>Reserva tu mesa</h1>
+            <img src="images/flor.png" alt="" class="flor-reserva">
+        </div>
+
+        <div class="reserva-layout">
+            <img src="images/cafemesa.jpg" alt="" class="imagen-decorativa">
+            <form>
+                <ul class="lista-campos">
+                    <li>
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </li>
+
+                    <li>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </li>
+
+                    <li>
+                        <label for="cantPersonas">Cantidad de personas</label>
+                        <input type="text" id="cantPersonas" name="cantPersonas" required>
+                    </li>
+
+                    <li>
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </li>
+
+                    <li>
+                        <label for="observaciones">Observaciones</label>
+                        <input type="text" id="observaciones" name="observaciones">
+                    </li>
+                </ul>
+                <button type="submit">Confirmar reserva</button>
+            </form>
+            <img src="images/imagencafe.jpg" alt="" class="imagen-decorativa">
+        </div>
+    </main>
+
+    <footer>
+        <p>Datos de contacto</p>
+
+        <address>
+            <ul class="lista-contacto">
+                <li>+54 9 299 123-4567</li>
+                <li>pistachocoffeestore@gmail.com</li>
+                <li>Buenos Aires 1400, Neuquén Capital</li>
+            </ul>
+        </address>
+    </footer>
+
+</body>
+
+</html>

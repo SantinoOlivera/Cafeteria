@@ -1,0 +1,98 @@
+.volver {
+    display: inline-block;
+    margin: 1.5rem 0 1rem;
+    color: var(--verde-oscuro);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.volver:hover,
+.volver:focus-visible {
+    text-decoration: underline;
+}
+
+.detalle-producto {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.detalle-imagen {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: var(--radio);
+    flex-shrink: 0;
+}
+
+.detalle-info h1 {
+    margin: 0 0 0.8rem;
+    color: var(--texto);
+}
+
+.detalle-descripcion {
+    color: var(--texto-suave);
+    line-height: 1.6;
+}
+
+.detalle-separador {
+    max-width: 40rem;
+    margin: 2rem auto;
+    border: none;
+    border-top: 1px solid #4b2e2b;
+}
+
+.detalle-precio {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--verde-oscuro);
+    margin: 0 0 3rem;
+}
+
+.boton-carrito {
+    margin-top: 1.2rem;
+    background: var(--verde);
+    color: var(--texto);
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radio);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.boton-carrito:hover,
+.boton-carrito:focus-visible {
+    background: var(--verde-oscuro);
+    color: #fff;
+}
+
+.selector-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+.selector-cantidad label {
+    font-weight: 700;
+    color: var(--verde-oscuro);
+}
+
+.selector-cantidad input {
+    width: 4.5rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--borde);
+    border-radius: var(--radio);
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.selector-cantidad input:focus {
+    outline: 2px solid var(--verde-oscuro);
+    outline-offset: 2px;
+}

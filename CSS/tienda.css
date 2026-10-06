@@ -1,0 +1,60 @@
+.grilla-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    width: 250px;
+    border: 2px solid #4b2e2b;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    background-color: var(--fondo);
+}
+
+.producto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titulo-tienda {
+    text-align: center;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.titulo-tienda h2 {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+
+.rama-titulo {
+    position: absolute;
+    left: 0rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17rem;
+    height: auto;
+    z-index: 1;
+}
+
+.rama-titulo-derecha {
+    position: absolute;
+    right: 0rem;
+    top: 75%;
+    /* más abajo que el 50% de la rama izquierda */
+    transform: translateY(-50%);
+    width: 17rem;
+    height: auto;
+    z-index: 1;
+}
+
+.producto-vinculo {
+    text-decoration: none;
+    color: inherit;
+}

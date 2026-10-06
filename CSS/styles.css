@@ -1,0 +1,121 @@
+:root {
+  --rosa: #ffd7f5;
+  --verde: #a5b66a;
+
+
+  --verde-oscuro: #5c6b38;
+  /* para texto sobre fondo claro, o botones */
+  --rosa-oscuro: #b5508f;
+  /* para acentos de texto, precios, etc. */
+
+
+  --texto: #2b2420;
+  /* casi negro, para el texto principal */
+  --texto-suave: #6b6058;
+  /* para descripciones, texto secundario */
+  --fondo: #fffaf8;
+  /* blanco cálido */
+  --borde: #e8d8e3;
+
+  --radio: 8px;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: "Nunito", Arial, sans-serif;
+}
+
+body h1 {
+  text-align: center;
+
+}
+
+.subtitulo{
+  text-align: center;
+  font-weight: 250;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--texto-suave);
+  border-bottom: 1px solid var(--borde);
+}
+
+h2,
+h3,
+.marca {
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  background: var(--verde);
+  color: var(--texto);
+  padding: 1.5rem 1.5rem 0;
+  text-align: center;
+  border-radius: 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  color: var(--verde-oscuro);
+}
+
+header p {
+  margin: 0.3rem 0 0;
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+
+nav {
+  background: var(--rosa);
+  margin-top: 1.2rem;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--rosa-oscuro);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radio);
+}
+
+footer {
+  background: var(--verde);
+  margin-top: 1.2rem;
+  padding: 2rem 1rem;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+footer p {
+  text-align: center;
+}
+
+nav a:hover {
+  background: var(--fondo);
+  color: var(--rosa-oscuro);
+}
+
+
+

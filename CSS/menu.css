@@ -1,0 +1,107 @@
+.lista-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--borde);
+}
+
+.item-menu__imagen {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+.item-menu__nombre {
+  flex-grow: 1;
+}
+
+.item-menu__precio {
+  font-weight: 700;
+  color: var(--verde-oscuro);
+}
+
+body h1 {
+  text-align: center;
+
+}
+
+section>h2 {
+  text-align: center;
+  color: var(--verde-oscuro);
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-weight: 250;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--texto-suave);
+  border-bottom: 2px solid #4b2e2b;
+}
+
+.titulo-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.icono-con-flor {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  flex-shrink: 0;
+}
+
+.deco-titulo {
+  position: absolute;
+  top: 1rem;
+  width: 11rem;
+  height: 11rem;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.icono-titulo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.icono-con-flor:first-child .deco-titulo {
+  left: 9.5rem;
+}
+
+.icono-con-flor:last-child .deco-titulo {
+  left: -10.5rem;
+}
+
+.titulo-categoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.flor-chica {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}

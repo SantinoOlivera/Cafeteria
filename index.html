@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pistacho Coffee Store</title>
     <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Nunito&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Pistacho Coffee Store</h1>
-        
-        
+        <div class="marca">
+            <img src="images/pistacho.png" alt="Logo Pistacho Coffee Store" class="logo">
+            <h1>Pistacho Coffee Store</h1>
+        </div>
+
+
         <nav>
             <ul>
                 <li><a href="tienda.html">Tienda</a></li>
@@ -23,20 +29,64 @@
 
     </header>
 
-    <main>
+    <main class="inicio-layout">
         <div class="texto-bienvenida">
+            <img src="images/rama.png" alt="" class="rama-decorativa">
             <h2>Bienvenido!</h2>
             <p>
-                Café, algo rico y un espacio para disfrutar a tu manera.<br>Seleccionamos cada detalle para crear un lugar 
-                simple, cómodo y agradable. Café recién preparado, productos frescos y una propuesta pensada para acompañarte 
-                en cualquier momento del día.<br>Ya sea para empezar la mañana, hacer una pausa o encontrarte con alguien, 
+                Café, algo rico y un espacio para disfrutar a tu manera.<br>Seleccionamos cada detalle para crear un
+                lugar
+                simple, cómodo y agradable. Café recién preparado, productos frescos y una propuesta pensada para
+                acompañarte
+                en cualquier momento del día.<br>Ya sea para empezar la mañana, hacer una pausa o encontrarte con
+                alguien,
                 acá siempre hay algo esperándote.<br>Pasá, elegí lo que más te guste y quedate un rato.</p>
         </div>
 
-            <img class="imagen-bienvenida" alt = "Taza de cafe y medialuna" src="images/cafe-medialuna.png">
+        <img class="imagen-bienvenida" alt="Taza de cafe y medialuna" src="images/cafe-medialuna.png">
     </main>
 
+    <section class="destacados" aria-labelledby="titulo-destacados">
+        <h2 id="titulo-destacados">Algunos de nuestros favoritos</h2>
+
+        <ul class="scroll-productos">
+            <li class="tarjeta-producto">
+                <img src="images/latteavellanas.png" alt="Latte de avellana">
+                <span class="nombre">Latte de avellana</span>
+                <span class="precio">$7500</span>
+            </li>
+
+            <li class="tarjeta-producto">
+                <img src="images/cheesecakelimon.jpg" alt="Cheesecake de limón">
+                <span class="nombre">Cheesecake de limón</span>
+                <span class="precio">$12000</span>
+            </li>
+
+            <li class="tarjeta-producto">
+                <img src="images/tostadocampo.jpg" alt="Tostado de campo">
+                <span class="nombre">Tostado de campo</span>
+                <span class="precio">$9500</span>
+            </li>
+
+            <li class="tarjeta-producto">
+                <img src="images/brusquettapalta.jpg" alt="Brusquetta de Palta">
+                <span class="nombre">Brusquetta de Palta</span>
+                <span class="precio">$10500</span>
+            </li>
+
+            <li class="tarjeta-producto">
+                <img src="images/croissant.png" alt="Croissant de Pistacho">
+                <span class="nombre">Croissant de Pistacho</span>
+                <span class="precio">$6500</span>
+            </li>
+
+        </ul>
+
+        <p><a href="menu.html">Ver el menú completo →</a></p>
+    </section>
+
     <footer>
+        <p>Datos de contacto</p>
 
         <address>
             <ul>
@@ -49,4 +99,5 @@
     </footer>
 
 </body>
+
 </html>
