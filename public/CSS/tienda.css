@@ -57,4 +57,5 @@
 .producto-vinculo {
     text-decoration: none;
     color: inherit;
+    display: block
 }

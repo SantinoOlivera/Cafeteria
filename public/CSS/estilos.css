@@ -134,7 +134,7 @@ body section p a:hover {
     height: auto;
     opacity: 0.70;
     z-index: 1;
-    /* queda detrás del texto */
+    /* queda atras del texto */
     pointer-events: none;
     /* para que no interfiera si alguien hace clic cerca */
 }
@@ -157,7 +157,7 @@ body section h2 {
     margin: 0;
     padding: 1rem 0.5rem;
     overflow-x: auto;
-    /* clave: habilita el scroll horizontal */
+    /* habilita el scroll horizontal */
     scroll-snap-type: x mandatory;
     /* hace que al soltar, "encaje" en cada tarjeta */
 }
